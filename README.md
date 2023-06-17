@@ -1,11 +1,5 @@
-# ComposeTvTemplate
-A template designed with very basic setup ready to start developing apps for compose TV
-
-- TV related manifest 
-- Compose DOM
-- Compose TV dependencies 
-- Compose TV material theme 
-- Compose TV typography and colors
+# GDGAndroidCompoeTv
+Workshop demo
 
 ## Produces
 
