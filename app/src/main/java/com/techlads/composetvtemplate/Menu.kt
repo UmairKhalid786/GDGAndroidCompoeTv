@@ -2,6 +2,7 @@
 
 package com.techlads.composetvtemplate
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -23,21 +24,21 @@ import androidx.tv.material3.Text
 fun Menu(modifier: Modifier = Modifier) {
     TvLazyColumn(modifier = modifier, content = {
         item {
-            MenuItem(title = "Home", ic = ImageVector.vectorResource(id = R.drawable.ic_home))
-            MenuItem(title = "Headset", ic = ImageVector.vectorResource(id = R.drawable.ic_headset))
-            MenuItem(title = "Videos", ic = ImageVector.vectorResource(id = R.drawable.ic_video))
-            MenuItem(title = "Favorites", ic = ImageVector.vectorResource(id = R.drawable.ic_favorite))
-            MenuItem(title = "Profile", ic = ImageVector.vectorResource(id = R.drawable.ic_profile))
-            MenuItem(title = "Settings", ic = ImageVector.vectorResource(id = R.drawable.ic_settings))
+            MenuItem(title = "Home", ic = R.drawable.ic_home)
+            MenuItem(title = "Headset", ic = R.drawable.ic_headset)
+            MenuItem(title = "Videos", ic = R.drawable.ic_video)
+            MenuItem(title = "Favorites", ic = R.drawable.ic_favorite)
+            MenuItem(title = "Profile", ic = R.drawable.ic_profile)
+            MenuItem(title = "Settings", ic = R.drawable.ic_settings)
         }
     })
 }
 
 @Composable
-fun MenuItem(title: String, ic: ImageVector) {
+fun MenuItem(title: String, @DrawableRes ic: Int) {
     Surface(onClick = {}, modifier = Modifier.padding(bottom = 8.dp)) {
-        Row(Modifier.padding(16.dp).fillMaxWidth()) {
-            Icon(imageVector = ic, contentDescription = title)
+        Row(Modifier.fillMaxWidth().padding(16.dp)) {
+            Icon(imageVector = ImageVector.vectorResource(id = ic), contentDescription = title)
             Spacer(modifier = Modifier.size(8.dp))
             Text(text = title, style = MaterialTheme.typography.bodyLarge)
         }
