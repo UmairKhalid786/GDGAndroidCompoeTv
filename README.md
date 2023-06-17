@@ -9,4 +9,5 @@ A template designed with very basic setup ready to start developing apps for com
 
 ## Produces
 
-![Screenshot_20230617_021800](https://github.com/UmairKhalid786/ComposeTvTemplate/assets/21205138/aaff991e-d179-48ba-81aa-9b1b6228dcfd)
+https://github.com/UmairKhalid786/GDGAndroidCompoeTv/assets/21205138/76c5ea73-45ed-4f2d-8e3c-445d84042d13
+
